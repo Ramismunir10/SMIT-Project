@@ -1,4 +1,4 @@
-class Planets{
+class Planets {
   List planets = [
     '1. Moon ===> Distance from Earth 226,000 miles (363,300 km)',
     '2. Mercury ===> Distance from Earth 48 million miles (77 million km)',
@@ -10,9 +10,9 @@ class Planets{
     '8. Neptune ===> Distance from Earth 2.7 billion miles (4.3 billon km)',
     '9. Pluto ===> Distance from Earth 2.66 billion miles (4.28 billion km)'
   ];
-  void names(){
-    for(int i = 0; i < planets.length; i++) {
-    print(planets[i]);
-  }
+  void names() {
+    for (int i = 0; i < planets.length; i++) {
+      print(planets[i]);
+    }
   }
 }

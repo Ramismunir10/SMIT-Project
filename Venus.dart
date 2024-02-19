@@ -5,8 +5,8 @@ class Venus {
     '2. Venus Express ===>50rs',
     '3. Magellan ===>25rs'
   ];
-  int Venera7 = 75,VenusExpress=50,Magellan=25;
-
+  int Venera7 = 75, VenusExpress = 50, Magellan = 25;
+  String name = 'Venus';
   int? noOfDays, price;
   void Spaceship() {
     for (int i = 0; i < SpaceCraft.length; i++) {

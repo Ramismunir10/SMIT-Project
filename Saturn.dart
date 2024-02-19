@@ -6,7 +6,7 @@ class Saturn {
     '3. Galileo ===>25rs'
   ];
   int Huygen = 75, Cassini = 50, Galileo = 25;
-
+  String name = 'Saturn';
   int? noOfDays, price;
   void Spaceship() {
     for (int i = 0; i < SpaceCraft.length; i++) {
