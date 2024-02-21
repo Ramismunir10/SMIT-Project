@@ -1,9 +1,9 @@
 class Saturn {
   List SpaceCraft = [
     'Select Your SpaceCraft! (1-3)',
-    '1. Huygen ===> 75rs',
-    '2. Cassini: ===>50rs',
-    '3. Galileo ===>25rs'
+    '1. Huygen ===> \$75',
+    '2. Cassini: ===> \$50',
+    '3. Galileo ===> \$25'
   ];
   int Huygen = 75, Cassini = 50, Galileo = 25;
   String name = 'Saturn';

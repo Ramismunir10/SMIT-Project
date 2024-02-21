@@ -1,6 +1,6 @@
 class Uranus {
   List SpaceCraft = [
-    'The only available Spacecraft to Uranus is Voyager 2 ===> 75rs',
+    'The only available Spacecraft to Uranus is Voyager 2 ===> \$75',
   ];
   int Voyager2 = 25;
   String name = 'Uranus';
