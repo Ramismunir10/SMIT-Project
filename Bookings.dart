@@ -16,8 +16,8 @@ void manageBooking() {
         '-----------------------------------------------------------------------------------------------');
     print('Your Bookings: ');
     print('1. Jupiter ===> Juno ---> 3 Days --> 26/12/2025');
-    print('2. Moon ===> Appollo 11 ---> 7 Days --> 24/05/2026');
-    print('3. Pluto ===> New Horizon probe ---> 10 Days --> 12/08/2027');
+    print('2. Moon ===> Appollo 11 ---> 7 Days --> 20/05/2026');
+    print('3. Pluto ===> New Horizon probe ---> 10 Days --> 22/07/2026');
     print(
         '-----------------------------------------------------------------------------------------------');
     print('1.Change Booking Date');
@@ -65,8 +65,8 @@ void manageBooking() {
           '-----------------------------------------------------------------------------------------------');
       print('Select Your Bookings To Change Date:');
       print('1. Jupiter ===> Juno ---> 3 Days --> 26/12/2025');
-      print('2. Moon ===> Appollo 11 ---> 7 Days --> 24/05/2026');
-      print('3. Pluto ===> New Horizon probe ---> 10 Days --> 12/08/2027');
+      print('2. Moon ===> Appollo 11 ---> 7 Days --> 20/05/2026');
+      print('3. Pluto ===> New Horizon probe ---> 10 Days --> 22/07/2026');
       int pSelect = int.parse(stdin.readLineSync()!);
       if (pSelect == 1) {
         print(
@@ -76,7 +76,7 @@ void manageBooking() {
             '1. 26/12/2025   2. 27/12/2025   3. 28/12/2025   4. 29/12/2025   5. 30/12/2025   6. 31/12/2025');
         stdout.write('Enter the new date you want (DD/MM/YYYY): ');
         String newDate = stdin.readLineSync()!;
-        if ((newDate == '27/12/2025') ||
+        if ((newDate == '26/12/2025') ||
             (newDate == '27/12/2025') ||
             (newDate == '28/12/2025') ||
             (newDate == '29/12/2025') ||
@@ -127,10 +127,12 @@ void manageBooking() {
         print(
             '-----------------------------------------------------------------------------------------------');
         print('Select Date From The Following: ');
-        print('1. 24/05/2026   2. 28/05/2026   3. 02/06/2026   4. 09/06/2026');
+        print(
+            '1. 20/03/2026  2. 24/05/2026   3. 28/05/2026   4. 02/06/2026   5. 09/06/2026');
         stdout.write('Enter the new date you want (DD/MM/YYYY): ');
         String newDate = stdin.readLineSync()!;
-        if ((newDate == '24/05/2026') ||
+        if ((newDate == '20/03/2026') ||
+            (newDate == '24/05/2026') ||
             (newDate == '28/05/2026') ||
             (newDate == '02/06/2026') ||
             (newDate == '09/06/2026')) {
@@ -179,13 +181,15 @@ void manageBooking() {
         print(
             '-----------------------------------------------------------------------------------------------');
         print('Select Date From The Following: ');
-        print('1. 22/07/2026   2. 03/08/2026   3. 09/09/2026   4. 11/11/2026');
+        print(
+            '1. 22/07/2026   2. 03/08/2026   3. 09/09/2026   4. 11/11/2026  5. 12/12/2026');
         stdout.write('Enter the new date you want (DD/MM/YYYY): ');
         String newDate = stdin.readLineSync()!;
         if ((newDate == '11/11/2026') ||
             (newDate == '22/07/2026') ||
             (newDate == '03/08/2026') ||
-            (newDate == '09/09/2026')) {
+            (newDate == '09/09/2026') ||
+            (newDate == '12/12/2026')) {
           print(
               '-----------------------------------------------------------------------------------------------');
           print('Do you want to change number of days for your trip? (y/n):');
@@ -237,7 +241,7 @@ void manageBooking() {
     print(
         '-----------------------------------------------------------------------------------------------');
     print('Your have 1 booking:');
-    print('1. Neptune ===> Voyager 2 ---> 14 Days --> 02/04/2029');
+    print('1. Neptune ===> Voyager 2 ---> 14 Days --> 02/07/2029');
     print(
         '-----------------------------------------------------------------------------------------------');
     print('1.Change Booking Date');
@@ -310,8 +314,8 @@ void manageBooking() {
     print(
         '-----------------------------------------------------------------------------------------------');
     print('Your Bookings:');
-    print('1. Mars ===> Juno ---> 35 Days --> 26/12/2025');
-    print('2. Mercury ===> Mariner 10 ---> 24 Days --> 24/05/2026');
+    print('1. Mars ===> Juno ---> 35 Days --> 04/02/2024');
+    print('2. Mercury ===> Mariner 10 ---> 24 Days --> 24/11/2034');
     print(
         '-----------------------------------------------------------------------------------------------');
     print('1.Change Booking Date');
@@ -348,8 +352,8 @@ void manageBooking() {
       print(
           '-----------------------------------------------------------------------------------------------');
       print('Select Your Bookings To Change Date:');
-      print('1. Mars ===> Viking 1 ---> 35 Days --> 26/01/2024');
-      print('2. Mercury ===> Mariner 10 ---> 24 Days --> 24/10/2034');
+      print('1. Mars ===> Viking 1 ---> 35 Days --> 04/02/2024');
+      print('2. Mercury ===> Mariner 10 ---> 24 Days --> 24/11/2034');
       int pSelect = int.parse(stdin.readLineSync()!);
       if (pSelect == 1) {
         print(

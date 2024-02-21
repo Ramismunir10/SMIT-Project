@@ -103,64 +103,115 @@ void System(int attempts, int attempt) {
             if (choice == 1) {
               print(
                   '-----------------------------------------------------------------------------------------------');
-              print('How many days trip you want? ');
-              int noOfDays = int.parse(stdin.readLineSync()!);
-              int price = mn.Apollo11 * noOfDays;
-              print(
-                  '===============================================================================================');
-              print('The Total Package cost: \$$price');
-              print('Enjoy your Trip to ${mn.name}');
-              print(
-                  '===============================================================================================');
-              exit(0);
+              print('Select The Date of Your Trip:');
+              mn.moonDates();
+              String Date = stdin.readLineSync()!;
+              if ((Date == '20/03/2026') ||
+                  (Date == '24/05/2026') ||
+                  (Date == '28/05/2026') ||
+                  (Date == '02/06/2026') ||
+                  (Date == '09/06/2026')) {
+                print('How many days trip you want? ');
+                int noOfDays = int.parse(stdin.readLineSync()!);
+                int price = mn.Apollo11 * noOfDays;
+                print(
+                    '===============================================================================================');
+                print('The Total Package Cost: \$$price');
+                print('Enjoy your Trip to ${mn.name} on $Date');
+                print(
+                    '===============================================================================================');
+                exit(0);
+              } else {
+                print('Wrong Option.');
+                print("Redirecting you to Homepage");
+                homePage();
+              }
             } else if (choice == 2) {
               print(
                   '-----------------------------------------------------------------------------------------------');
-              print('How many days trip you want? ');
-              int noOfDays = int.parse(stdin.readLineSync()!);
-              int price = mn.Skylab15 * noOfDays;
-              print(
-                  '===============================================================================================');
-              print('The Total Package cost: \$$price');
-              print('Enjoy your Trip to ${mn.name}');
-              print(
-                  '===============================================================================================');
-              exit(0);
+              print('Select The Date of Your Trip:');
+              mn.moonDates();
+              String Date = stdin.readLineSync()!;
+              if ((Date == '20/03/2026') ||
+                  (Date == '24/05/2026') ||
+                  (Date == '28/05/2026') ||
+                  (Date == '02/06/2026') ||
+                  (Date == '09/06/2026')) {
+                print('How many days trip you want? ');
+                int noOfDays = int.parse(stdin.readLineSync()!);
+                int price = mn.Skylab15 * noOfDays;
+                print(
+                    '===============================================================================================');
+                print('The Total Package Cost: \$$price');
+                print('Enjoy your Trip to ${mn.name} on $Date');
+                print(
+                    '===============================================================================================');
+                exit(0);
+              } else {
+                print('Wrong Option.');
+                print("Redirecting you to Homepage");
+                homePage();
+              }
             } else if (choice == 3) {
               print(
                   '-----------------------------------------------------------------------------------------------');
-              print('How many days trip you want? ');
-              int noOfDays = int.parse(stdin.readLineSync()!);
-              int price = mn.StarLiner * noOfDays;
-              print(
-                  '===============================================================================================');
-              print('The Total Package cost: \$$price');
-              print('Enjoy your Trip to ${mn.name}');
-              print(
-                  '===============================================================================================');
-              exit(0);
+              print('Select The Date of Your Trip:');
+              mn.moonDates();
+              String Date = stdin.readLineSync()!;
+              if ((Date == '20/03/2026') ||
+                  (Date == '24/05/2026') ||
+                  (Date == '28/05/2026') ||
+                  (Date == '02/06/2026') ||
+                  (Date == '09/06/2026')) {
+                print('How many days trip you want? ');
+                int noOfDays = int.parse(stdin.readLineSync()!);
+                int price = mn.StarLiner * noOfDays;
+                print(
+                    '===============================================================================================');
+                print('The Total Package Cost: \$$price');
+                print('Enjoy your Trip to ${mn.name} on $Date');
+                print(
+                    '===============================================================================================');
+                exit(0);
+              } else {
+                print('Wrong Option.');
+                print("Redirecting you to Homepage");
+                homePage();
+              }
             }
+            choices++;
           }
-          choices++;
         }
       }
       //Mercury
       else if (place == 2) {
         Mercury mc = Mercury();
-        print(
-            '-----------------------------------------------------------------------------------------------');
         mc.Spaceship();
         mc.SpaceCraft[0];
-        print('How many days trip you want? ');
-        int noOfDays = int.parse(stdin.readLineSync()!);
-        int price = mc.Mariner10 * noOfDays;
         print(
-            '===============================================================================================');
-        print('The Total Package Cost: \$$price');
-        print('Enjoy your Trip to ${mc.name}');
-        print(
-            '===============================================================================================');
-        exit(0);
+            '-----------------------------------------------------------------------------------------------');
+        print('Select The Date of Your Trip:');
+        mc.MerDates();
+        String Date = stdin.readLineSync()!;
+        if ((Date == '24/11/2034') ||
+            (Date == '24/12/2034') ||
+            (Date == '24/01/2035') ||
+            (Date == '24/02/2035')) {
+          print('How many days trip you want? ');
+          int noOfDays = int.parse(stdin.readLineSync()!);
+          int price = mc.Mariner10 * noOfDays;
+          print(
+              '===============================================================================================');
+          print('The Total Package Cost: \$$price');
+          print('Enjoy your Trip to ${mc.name} on $Date');
+          print(
+              '===============================================================================================');
+          exit(0);
+        } else {
+          print('Wrong Option.');
+          print("Redirecting you to Homepage");
+          homePage();
+        }
       }
       //Venus
       else if (place == 3) {
@@ -189,42 +240,78 @@ void System(int attempts, int attempt) {
             if (choice == 1) {
               print(
                   '-----------------------------------------------------------------------------------------------');
-              print('How many days trip you want? ');
-              int noOfDays = int.parse(stdin.readLineSync()!);
-              int price = vn.Venera7 * noOfDays;
-              print(
-                  '===============================================================================================');
-              print('The Total Package Cost: \$$price');
-              print('Enjoy your Trip to ${vn.name}');
-              print(
-                  '===============================================================================================');
-              exit(0);
+              print('Select The Date of Your Trip:');
+              vn.venDates();
+              String Date = stdin.readLineSync()!;
+              if ((Date == '07/04/2032') ||
+                  (Date == '11/03/2033') ||
+                  (Date == '19/06/2034') ||
+                  (Date == '25/09/2035')) {
+                print('How many days trip you want? ');
+                int noOfDays = int.parse(stdin.readLineSync()!);
+                int price = vn.Venera7 * noOfDays;
+                print(
+                    '===============================================================================================');
+                print('The Total Package Cost: \$$price');
+                print('Enjoy your Trip to ${vn.name} on $Date');
+                print(
+                    '===============================================================================================');
+                exit(0);
+              } else {
+                print('Wrong Option.');
+                print("Redirecting you to Homepage");
+                homePage();
+              }
             } else if (choice == 2) {
               print(
                   '-----------------------------------------------------------------------------------------------');
-              print('How many days trip you want? ');
-              int noOfDays = int.parse(stdin.readLineSync()!);
-              int price = vn.VenusExpress * noOfDays;
-              print(
-                  '===============================================================================================');
-              print('The Total Package Cost: \$$price');
-              print('Enjoy your Trip to ${vn.name}');
-              print(
-                  '===============================================================================================');
-              exit(0);
+              print('Select The Date of Your Trip:');
+              vn.venDates();
+              String Date = stdin.readLineSync()!;
+              if ((Date == '07/04/2032') ||
+                  (Date == '11/03/2033') ||
+                  (Date == '19/06/2034') ||
+                  (Date == '25/09/2035')) {
+                print('How many days trip you want? ');
+                int noOfDays = int.parse(stdin.readLineSync()!);
+                int price = vn.VenusExpress * noOfDays;
+                print(
+                    '===============================================================================================');
+                print('The Total Package Cost: \$$price');
+                print('Enjoy your Trip to ${vn.name} on $Date');
+                print(
+                    '===============================================================================================');
+                exit(0);
+              } else {
+                print('Wrong Option.');
+                print("Redirecting you to Homepage");
+                homePage();
+              }
             } else if (choice == 3) {
               print(
                   '-----------------------------------------------------------------------------------------------');
-              print('How many days trip you want? ');
-              int noOfDays = int.parse(stdin.readLineSync()!);
-              int price = vn.Magellan * noOfDays;
-              print(
-                  '===============================================================================================');
-              print('The Total Package Cost: \$$price');
-              print('Enjoy your Trip to ${vn.name}');
-              print(
-                  '===============================================================================================');
-              exit(0);
+              print('Select The Date of Your Trip:');
+              vn.venDates();
+              String Date = stdin.readLineSync()!;
+              if ((Date == '07/04/2032') ||
+                  (Date == '11/03/2033') ||
+                  (Date == '19/06/2034') ||
+                  (Date == '25/09/2035')) {
+                print('How many days trip you want? ');
+                int noOfDays = int.parse(stdin.readLineSync()!);
+                int price = vn.Magellan * noOfDays;
+                print(
+                    '===============================================================================================');
+                print('The Total Package Cost: \$$price');
+                print('Enjoy your Trip to ${vn.name} on $Date');
+                print(
+                    '===============================================================================================');
+                exit(0);
+              } else {
+                print('Wrong Option.');
+                print("Redirecting you to Homepage");
+                homePage();
+              }
             }
           }
           choices++;
@@ -257,42 +344,78 @@ void System(int attempts, int attempt) {
             if (choice == 1) {
               print(
                   '-----------------------------------------------------------------------------------------------');
-              print('How many days trip you want? ');
-              int noOfDays = int.parse(stdin.readLineSync()!);
-              int price = mr.Maven * noOfDays;
-              print(
-                  '===============================================================================================');
-              print('The Total Package Cost: \$$price');
-              print('Enjoy your Trip to ${mr.name}');
-              print(
-                  '===============================================================================================');
-              exit(0);
+              print('Select The Date of Your Trip:');
+              mr.MarDates();
+              String Date = stdin.readLineSync()!;
+              if ((Date == '24/11/2034') ||
+                  (Date == '24/12/2034') ||
+                  (Date == '24/01/2035') ||
+                  (Date == '24/02/2035')) {
+                print('How many days trip you want? ');
+                int noOfDays = int.parse(stdin.readLineSync()!);
+                int price = mr.Maven * noOfDays;
+                print(
+                    '===============================================================================================');
+                print('The Total Package Cost: \$$price');
+                print('Enjoy your Trip to ${mr.name} on $Date');
+                print(
+                    '===============================================================================================');
+                exit(0);
+              } else {
+                print('Wrong Option.');
+                print("Redirecting you to Homepage");
+                homePage();
+              }
             } else if (choice == 2) {
               print(
                   '-----------------------------------------------------------------------------------------------');
-              print('How many days trip you want? ');
-              int noOfDays = int.parse(stdin.readLineSync()!);
-              int price = mr.Spirit * noOfDays;
-              print(
-                  '===============================================================================================');
-              print('The Total Package Cost: \$$price');
-              print('Enjoy your Trip to ${mr.name}');
-              print(
-                  '===============================================================================================');
-              exit(0);
+              print('Select The Date of Your Trip:');
+              mr.MarDates();
+              String Date = stdin.readLineSync()!;
+              if ((Date == '24/11/2034') ||
+                  (Date == '24/12/2034') ||
+                  (Date == '24/01/2035') ||
+                  (Date == '24/02/2035')) {
+                print('How many days trip you want? ');
+                int noOfDays = int.parse(stdin.readLineSync()!);
+                int price = mr.Spirit * noOfDays;
+                print(
+                    '===============================================================================================');
+                print('The Total Package Cost: \$$price');
+                print('Enjoy your Trip to ${mr.name} on $Date');
+                print(
+                    '===============================================================================================');
+                exit(0);
+              } else {
+                print('Wrong Option.');
+                print("Redirecting you to Homepage");
+                homePage();
+              }
             } else if (choice == 3) {
               print(
                   '-----------------------------------------------------------------------------------------------');
-              print('How many days trip you want? ');
-              int noOfDays = int.parse(stdin.readLineSync()!);
-              int price = mr.Viking1 * noOfDays;
-              print(
-                  '===============================================================================================');
-              print('The Total Package Cost: \$$price');
-              print('Enjoy your Trip to ${mr.name}');
-              print(
-                  '===============================================================================================');
-              exit(0);
+              print('Select The Date of Your Trip:');
+              mr.MarDates();
+              String Date = stdin.readLineSync()!;
+              if ((Date == '24/11/2034') ||
+                  (Date == '24/12/2034') ||
+                  (Date == '24/01/2035') ||
+                  (Date == '24/02/2035')) {
+                print('How many days trip you want? ');
+                int noOfDays = int.parse(stdin.readLineSync()!);
+                int price = mr.Viking1 * noOfDays;
+                print(
+                    '===============================================================================================');
+                print('The Total Package Cost: \$$price');
+                print('Enjoy your Trip to ${mr.name} on $Date');
+                print(
+                    '===============================================================================================');
+                exit(0);
+              } else {
+                print('Wrong Option.');
+                print("Redirecting you to Homepage");
+                homePage();
+              }
             }
           }
           choices++;
@@ -325,42 +448,87 @@ void System(int attempts, int attempt) {
             if (choice == 1) {
               print(
                   '-----------------------------------------------------------------------------------------------');
-              print('How many days trip you want? ');
-              int noOfDays = int.parse(stdin.readLineSync()!);
-              int price = jp.Juno * noOfDays;
-              print(
-                  '===============================================================================================');
-              print('The Total Package Cost: \$$price');
-              print('Enjoy your Trip to ${jp.name}');
-              print(
-                  '===============================================================================================');
-              exit(0);
+              print('Select The Date of Your Trip:');
+              jp.jupDates();
+              String Date = stdin.readLineSync()!;
+              if ((Date == '25/12/2025') ||
+                  (Date == '26/12/2025') ||
+                  (Date == '27/12/2025') ||
+                  (Date == '28/12/2025') ||
+                  (Date == '29/12/2025') ||
+                  (Date == '30/12/2025') ||
+                  (Date == '31/12/2025')) {
+                print('How many days trip you want? ');
+                int noOfDays = int.parse(stdin.readLineSync()!);
+                int price = jp.Juno * noOfDays;
+                print(
+                    '===============================================================================================');
+                print('The Total Package Cost: \$$price');
+                print('Enjoy your Trip to ${jp.name} on $Date');
+                print(
+                    '===============================================================================================');
+                exit(0);
+              } else {
+                print('Wrong Option.');
+                print("Redirecting you to Homepage");
+                homePage();
+              }
             } else if (choice == 2) {
               print(
                   '-----------------------------------------------------------------------------------------------');
-              print('How many days trip you want? ');
-              int noOfDays = int.parse(stdin.readLineSync()!);
-              int price = jp.Pioneer10 * noOfDays;
-              print(
-                  '===============================================================================================');
-              print('The Total Package Cost: \$$price');
-              print('Enjoy your Trip to ${jp.name}');
-              print(
-                  '===============================================================================================');
-              exit(0);
+              print('Select The Date of Your Trip:');
+              jp.jupDates();
+              String Date = stdin.readLineSync()!;
+              if ((Date == '25/12/2025') ||
+                  (Date == '26/12/2025') ||
+                  (Date == '27/12/2025') ||
+                  (Date == '28/12/2025') ||
+                  (Date == '29/12/2025') ||
+                  (Date == '30/12/2025') ||
+                  (Date == '31/12/2025')) {
+                print('How many days trip you want? ');
+                int noOfDays = int.parse(stdin.readLineSync()!);
+                int price = jp.Pioneer10 * noOfDays;
+                print(
+                    '===============================================================================================');
+                print('The Total Package Cost: \$$price');
+                print('Enjoy your Trip to ${jp.name} on $Date');
+                print(
+                    '===============================================================================================');
+                exit(0);
+              } else {
+                print('Wrong Option.');
+                print("Redirecting you to Homepage");
+                homePage();
+              }
             } else if (choice == 3) {
               print(
                   '-----------------------------------------------------------------------------------------------');
-              print('How many days trip you want? ');
-              int noOfDays = int.parse(stdin.readLineSync()!);
-              int price = jp.Ulysses * noOfDays;
-              print(
-                  '===============================================================================================');
-              print('The Total Package Cost: \$$price');
-              print('Enjoy your Trip to ${jp.name}');
-              print(
-                  '===============================================================================================');
-              exit(0);
+              print('Select The Date of Your Trip:');
+              jp.jupDates();
+              String Date = stdin.readLineSync()!;
+              if ((Date == '25/12/2025') ||
+                  (Date == '26/12/2025') ||
+                  (Date == '27/12/2025') ||
+                  (Date == '28/12/2025') ||
+                  (Date == '29/12/2025') ||
+                  (Date == '30/12/2025') ||
+                  (Date == '31/12/2025')) {
+                print('How many days trip you want? ');
+                int noOfDays = int.parse(stdin.readLineSync()!);
+                int price = jp.Ulysses * noOfDays;
+                print(
+                    '===============================================================================================');
+                print('The Total Package Cost: \$$price');
+                print('Enjoy your Trip to ${jp.name} on $Date');
+                print(
+                    '===============================================================================================');
+                exit(0);
+              } else {
+                print('Wrong Option.');
+                print("Redirecting you to Homepage");
+                homePage();
+              }
             }
           }
           choices++;
@@ -393,42 +561,75 @@ void System(int attempts, int attempt) {
             if (choice == 1) {
               print(
                   '-----------------------------------------------------------------------------------------------');
-              print('How many days trip you want? ');
-              int noOfDays = int.parse(stdin.readLineSync()!);
-              int price = st.Huygen * noOfDays;
-              print(
-                  '===============================================================================================');
-              print('The Total Package Cost: \$$price');
-              print('Enjoy your Trip to ${st.name}');
-              print(
-                  '===============================================================================================');
-              exit(0);
+              print('Select The Date of Your Trip:');
+              st.satDates();
+              String Date = stdin.readLineSync()!;
+              if ((Date == '02/04/2029') ||
+                  (Date == '01/05/2030') ||
+                  (Date == '20/11/2031')) {
+                print('How many days trip you want? ');
+                int noOfDays = int.parse(stdin.readLineSync()!);
+                int price = st.Huygen * noOfDays;
+                print(
+                    '===============================================================================================');
+                print('The Total Package Cost: \$$price');
+                print('Enjoy your Trip to ${st.name} on $Date');
+                print(
+                    '===============================================================================================');
+                exit(0);
+              } else {
+                print('Wrong Option.');
+                print("Redirecting you to Homepage");
+                homePage();
+              }
             } else if (choice == 2) {
               print(
                   '-----------------------------------------------------------------------------------------------');
-              print('How many days trip you want? ');
-              int noOfDays = int.parse(stdin.readLineSync()!);
-              int price = st.Cassini * noOfDays;
-              print(
-                  '===============================================================================================');
-              print('The Total Package Cost: \$$price');
-              print('Enjoy your Trip to ${st.name}');
-              print(
-                  '===============================================================================================');
-              exit(0);
+              print('Select The Date of Your Trip:');
+              st.satDates();
+              String Date = stdin.readLineSync()!;
+              if ((Date == '02/04/2029') ||
+                  (Date == '01/05/2030') ||
+                  (Date == '20/11/2031')) {
+                print('How many days trip you want? ');
+                int noOfDays = int.parse(stdin.readLineSync()!);
+                int price = st.Cassini * noOfDays;
+                print(
+                    '===============================================================================================');
+                print('The Total Package Cost: \$$price');
+                print('Enjoy your Trip to ${st.name} on $Date');
+                print(
+                    '===============================================================================================');
+                exit(0);
+              } else {
+                print('Wrong Option.');
+                print("Redirecting you to Homepage");
+                homePage();
+              }
             } else if (choice == 3) {
               print(
                   '-----------------------------------------------------------------------------------------------');
-              print('How many days trip you want? ');
-              int noOfDays = int.parse(stdin.readLineSync()!);
-              int price = st.Galileo * noOfDays;
-              print(
-                  '===============================================================================================');
-              print('The Total Package Cost: \$$price');
-              print('Enjoy your Trip to ${st.name}');
-              print(
-                  '===============================================================================================');
-              exit(0);
+              print('Select The Date of Your Trip:');
+              st.satDates();
+              String Date = stdin.readLineSync()!;
+              if ((Date == '02/04/2029') ||
+                  (Date == '01/05/2030') ||
+                  (Date == '20/11/2031')) {
+                print('How many days trip you want? ');
+                int noOfDays = int.parse(stdin.readLineSync()!);
+                int price = st.Galileo * noOfDays;
+                print(
+                    '===============================================================================================');
+                print('The Total Package Cost: \$$price');
+                print('Enjoy your Trip to ${st.name} on $Date');
+                print(
+                    '===============================================================================================');
+                exit(0);
+              } else {
+                print('Wrong Option.');
+                print("Redirecting you to Homepage");
+                homePage();
+              }
             }
           }
           choices++;
@@ -443,16 +644,31 @@ void System(int attempts, int attempt) {
         us.SpaceCraft[0];
         print(
             '-----------------------------------------------------------------------------------------------');
-        print('How many days trip you want? ');
-        int noOfDays = int.parse(stdin.readLineSync()!);
-        int price = us.Voyager2 * noOfDays;
-        print(
-            '===============================================================================================');
-        print('The Total Package Cost: \$$price');
-        print('Enjoy your Trip to ${us.name}');
-        print(
-            '===============================================================================================');
-        exit(0);
+        print('Select The Date of Your Trip:');
+        us.usDates();
+        String Date = stdin.readLineSync()!;
+        if ((Date == '02/04/2029') ||
+            (Date == '02/07/2029') ||
+            (Date == '16/08/2029') ||
+            (Date == '17/10/2029') ||
+            (Date == '10/12/2029')) {
+          print(
+              '-----------------------------------------------------------------------------------------------');
+          print('How many days trip you want? ');
+          int noOfDays = int.parse(stdin.readLineSync()!);
+          int price = us.Voyager2 * noOfDays;
+          print(
+              '===============================================================================================');
+          print('The Total Package Cost: \$$price');
+          print('Enjoy your Trip to ${us.name} on $Date');
+          print(
+              '===============================================================================================');
+          exit(0);
+        } else {
+          print('Wrong Option.');
+          print("Redirecting you to Homepage");
+          homePage();
+        }
       }
       //Neptune
       else if (place == 8) {
@@ -463,16 +679,29 @@ void System(int attempts, int attempt) {
         nt.SpaceCraft[0];
         print(
             '-----------------------------------------------------------------------------------------------');
-        print('How many days trip you want? ');
-        int noOfDays = int.parse(stdin.readLineSync()!);
-        int price = nt.Voyager2 * noOfDays;
-        print(
-            '===============================================================================================');
-        print('The Total Package Cost: \$$price');
-        print('Enjoy your Trip to ${nt.name}');
-        print(
-            '===============================================================================================');
-        exit(0);
+        print('Select The Date of Your Trip:');
+        nt.NepDates();
+        String Date = stdin.readLineSync()!;
+        if ((Date == '02/04/2029') ||
+            (Date == '02/07/2029') ||
+            (Date == '16/08/2029') ||
+            (Date == '17/10/2029') ||
+            (Date == '10/12/2029')) {
+          print('How many days trip you want? ');
+          int noOfDays = int.parse(stdin.readLineSync()!);
+          int price = nt.Voyager2 * noOfDays;
+          print(
+              '===============================================================================================');
+          print('The Total Package Cost: \$$price');
+          print('Enjoy your Trip to ${nt.name} on $Date');
+          print(
+              '===============================================================================================');
+          exit(0);
+        } else {
+          print('Wrong Option.');
+          print("Redirecting you to Homepage");
+          homePage();
+        }
       }
       //Pluto
       else if (place == 9) {
@@ -483,16 +712,29 @@ void System(int attempts, int attempt) {
         pt.SpaceCraft[0];
         print(
             '-----------------------------------------------------------------------------------------------');
-        print('How many days trip you want? ');
-        int noOfDays = int.parse(stdin.readLineSync()!);
-        int price = pt.NewHorizonsProbe * noOfDays;
-        print(
-            '===============================================================================================');
-        print('The Total Package Cost: \$$price');
-        print('Enjoy your Trip to ${pt.name}');
-        print(
-            '===============================================================================================');
-        exit(0);
+        print('Select The Date of Your Trip:');
+        pt.pluDates();
+        String Date = stdin.readLineSync()!;
+        if ((Date == '01/01/2026') ||
+            (Date == '22/07/2026') ||
+            (Date == '03/08/2026') ||
+            (Date == '09/09/2026') ||
+            (Date == '11/11/2026')) {
+          print('How many days trip you want? ');
+          int noOfDays = int.parse(stdin.readLineSync()!);
+          int price = pt.NewHorizonsProbe * noOfDays;
+          print(
+              '===============================================================================================');
+          print('The Total Package Cost: \$$price');
+          print('Enjoy your Trip to ${pt.name} on $Date');
+          print(
+              '===============================================================================================');
+          exit(0);
+        } else {
+          print('Wrong Option.');
+          print("Redirecting you to Homepage");
+          homePage();
+        }
       }
       break;
     }
